@@ -1,0 +1,161 @@
+server:
+  port: 8010
+  tomcat:
+    accesslog:
+      enabled: true
+
+data:
+  animals:
+    -
+      id: a000001
+      name: Lulu
+      category: MOUSE
+      height: 0.05
+      weight: 0.5
+      sourceCountry: China
+      birthTime: 1623919916000
+      statue: ALIVE
+    -
+      id: a000002
+      name: Lala
+      category: MOUSE
+      height: 0.04
+      weight: 0.3
+      sourceCountry: China
+      birthTime: 1623919918000
+      statue: ALIVE
+    -
+      id: a000003
+      name: Lele
+      category: MOUSE
+      height: 0.05
+      weight: 0.2
+      sourceCountry: China
+      birthTime: 1623919918000
+      statue: ALIVE
+    -
+      id: a000004
+      name: Rush
+      category: OX
+      height: 1.2
+      weight: 402
+      sourceCountry: Mexico
+      birthTime: 1613445409000
+      statue: ALIVE
+    -
+      id: a000005
+      name: Thunder
+      category: TIGER
+      height: 1.1
+      weight: 602
+      sourceCountry: Russia
+      birthTime: 1581823009000
+      statue: ALIVE
+    -
+      id: a000006
+      name: Gangster
+      category: RABBIT
+      height: 0.35
+      weight: 3.3
+      sourceCountry: China
+      birthTime: 1615864109000
+      statue: ALIVE
+    -
+      id: a000007
+      name: Old King
+      category: DRAGON
+      height: 28
+      weight: 1520
+      sourceCountry: China
+      birthTime: 1268708909000
+      statue: DEAD
+    -
+      id: a000008
+      name: Liar
+      category: SNAKE
+      height: 5
+      weight: 14
+      sourceCountry: Vietnam
+      birthTime: 1613555200000
+      statue: ALIVE
+    -
+      id: a000009
+      name: Papi
+      category: HORSE
+      height: 1.9
+      weight: 200
+      sourceCountry: China
+      birthTime: 1550396800000
+      statue: ALIVE
+    -
+      id: a000010
+      name: MieMie
+      category: SHEEP
+      height: 0.8
+      weight: 100
+      sourceCountry: China
+      birthTime: 1550396800000
+      statue: ALIVE
+    -
+      id: a000011
+      name: Dobe
+      category: MONKEY
+      height: 0.4
+      weight: 16
+      sourceCountry: China
+      birthTime: 1550396100000
+      statue: ALIVE
+    -
+      id: a000012
+      name: Chicken
+      category: COCK
+      height: 0.2
+      weight: 3.5
+      sourceCountry: China
+      birthTime: 1550396900000
+      statue: ALIVE
+    -
+      id: a000013
+      name: Ketty
+      category: DOG
+      height: 0.2
+      weight: 10
+      sourceCountry: U.K
+      birthTime: 1581932800000
+      statue: ALIVE
+    -
+      id: a000014
+      name: Ben
+      category: PIG
+      height: 0.4
+      weight: 300
+      sourceCountry: China
+      birthTime: 1581932800000
+      statue: ALIVE
+    -
+      id: a000015
+      name: Lady
+      category: RABBIT
+      height: 0.3
+      weight: 3
+      sourceCountry: China
+      birthTime: 1615864609000
+      statue: ALIVE
+    -
+      id: a000016
+      name: Momo
+      category: SHEEP
+      height: 0.83
+      weight: 120
+      sourceCountry: China
+      birthTime: 1550396800000
+      statue: ALIVE
+    -
+      id: a000017
+      name: King
+      category: DRAGON
+      height: 21
+      weight: 1300
+      sourceCountry: China
+      birthTime: 1552705709000
+      statue: ALIVE
