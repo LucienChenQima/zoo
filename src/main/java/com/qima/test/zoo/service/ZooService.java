@@ -21,7 +21,10 @@ public class ZooService {
     }
 
     public ReportVO getReport() {
-        // TODO
-        return null;
+        return client.getReport();
+    }
+
+    public String getShow() {
+        return client.getShow();
     }
 }
