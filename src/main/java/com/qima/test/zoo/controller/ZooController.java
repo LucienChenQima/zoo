@@ -29,4 +29,30 @@ public class ZooController {
         return zooService.getReport();
     }
 
+    @GetMapping("show")
+    public String getShow() {
+        return zooService.getShow();
+    }
+
+    @PostMapping("/animal")
+    public void addAnimal(Animal animal) {
+        //TODO
+    }
+    @DeleteMapping("/animal/{id}")
+    public void removeAnimal(@PathVariable String id) {
+        //TODO
+    }
+    @PutMapping("/animal/{id}")
+    public void updateAnimal(@PathVariable String id , Animal animal) {
+        //TODO
+    }
+    @GetMapping("/animal")
+    public void getAnimal() {
+        //TODO
+    }
+    @GetMapping("/animal/{id}")
+    public void getAnimal(@PathVariable String id) {
+        //TODO
+    }
+
 }
