@@ -3,6 +3,92 @@
 Welcome to the "zoo", please help to complete the coding in this project according to the following 
 requirements within 45 minutes.
 
+## Project Structure
+
+This is a Spring Boot application for managing a zoo. The project follows a standard Maven structure with layered architecture.
+
+### Directory Layout
+
+```
+zoo/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/qima/test/zoo/
+│   │   │       ├── Starter.java              # Spring Boot application entry point
+│   │   │       ├── bean/                      # Domain models and DTOs
+│   │   │       │   ├── Animal.java            # Animal entity model
+│   │   │       │   ├── AnimalCategory.java    # Enum for animal categories
+│   │   │       │   ├── ReportVO.java          # Value object for digest report
+│   │   │       │   └── Status.java            # Enum for animal status
+│   │   │       ├── controller/                # REST API controllers
+│   │   │       │   └── ZooController.java     # Main controller for zoo operations
+│   │   │       ├── dao/                       # Data access layer
+│   │   │       │   └── ZooClient.java         # Client for animal data queries
+│   │   │       └── service/                   # Business logic layer
+│   │   │           └── ZooService.java        # Service for zoo operations
+│   │   └── resources/
+│   │       └── application.yml                # Application configuration and animal data
+│   └── test/
+│       └── java/
+│           └── com/qima/test/zoo/
+│               ├── StarterTests.java          # Application startup tests
+│               └── controller/
+│                   └── ZooControllerTests.java # Controller unit tests
+├── pom.xml                                    # Maven project configuration
+└── readme.md                                  # This file
+```
+
+### Technology Stack
+
+- **Framework**: Spring Boot 2.5.1
+- **Java Version**: 11
+- **Build Tool**: Maven
+- **Key Dependencies**:
+  - Spring Boot Starter Web
+  - Lombok (for reducing boilerplate code)
+  - Spring Boot DevTools
+  - Spring Boot Test
+
+### Application Architecture
+
+The application follows a **three-tier architecture**:
+
+1. **Controller Layer** (`controller/`): Handles HTTP requests and responses
+   - `ZooController`: Exposes REST APIs for animal operations
+   
+2. **Service Layer** (`service/`): Contains business logic
+   - `ZooService`: Implements zoo management logic and report generation
+   
+3. **Data Access Layer** (`dao/`): Manages data retrieval
+   - `ZooClient`: Provides methods to query animal data
+
+### Configuration
+
+- **Server Port**: 8010 (configured in `application.yml`)
+- **Animal Data**: Pre-configured in `application.yml` under `data.animals`
+- **Access Logging**: Enabled for Tomcat
+
+### Building and Running
+
+```bash
+# Build the project
+mvn clean install
+
+# Run the application
+mvn spring-boot:run
+
+# Or run the JAR file
+java -jar target/zoo-0.0.1-SNAPSHOT.jar
+```
+
+The application will start on `http://localhost:8010`
+
+### Available Endpoints
+
+- `GET /zoo/animals` - Retrieve all animals
+- `GET /zoo/report` - Get digest report of zoo statistics
+
 ### Task A: Digest Report
 
 Managing a zoo is never an easy job, so we have created a profile for each of the animals in the zoo like below, you can call `GET /zoo/animals` to get all raw data.
